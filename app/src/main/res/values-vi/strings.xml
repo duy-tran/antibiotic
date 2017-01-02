@@ -9,4 +9,8 @@
     <string name="level">Cấp độ</string>
     <string name="type">Loại</string>
     <string name="disease">Tên bệnh</string>
+    <string name="check">Kiểm tra</string>
+    <string name="record">Hồ sơ bệnh án</string>
+    <string name="advanced">Nâng cao</string>
+    <string name="basic">Cơ bản</string>
 </resources>

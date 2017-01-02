@@ -6,8 +6,10 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 
 import vn.edu.usth.antibiotic.Fragment.AdvancedRecordFragment;
 import vn.edu.usth.antibiotic.Fragment.BasicRecordFragment;
@@ -19,6 +21,11 @@ public class PersonalRecordActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_personal_record);
+        setTitle(getString(R.string.record));
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_record);
+        setSupportActionBar(toolbar);
+        ActionBar ab = getSupportActionBar();
+        ab.setDisplayHomeAsUpEnabled(true);
 
         PagerAdapter adapter = new PersonalRecordActivityFragmentPagerAdapter(getSupportFragmentManager());
         ViewPager pager = (ViewPager) findViewById(R.id.pager);
@@ -31,8 +38,7 @@ public class PersonalRecordActivity extends AppCompatActivity {
 
     public class PersonalRecordActivityFragmentPagerAdapter extends FragmentPagerAdapter {
         private final int PAGE_COUNT = 2;
-        private String titles[] = new String[]{"Basic", "Advanced" +
-                ""};
+        private String titles[] = new String[]{getString(R.string.basic), getString(R.string.advanced)};
 
         public PersonalRecordActivityFragmentPagerAdapter(FragmentManager fm) {
             super(fm);

@@ -1,9 +1,11 @@
 package vn.edu.usth.antibiotic;
 
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -21,6 +23,12 @@ public class PrescriptionActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_prescription);
+
+        setTitle(getString(R.string.antibiotic_check));
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_prescription);
+        setSupportActionBar(toolbar);
+        ActionBar ab = getSupportActionBar();
+        ab.setDisplayHomeAsUpEnabled(true);
     
         final ArrayList<String> medicineNames = new ArrayList<>();
         final MedicineAdapter medicineListAdapter = new MedicineAdapter(medicineNames);

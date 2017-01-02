@@ -15,4 +15,8 @@
     <string name="disease">Disease name</string>
     <string name="type">Type</string>
     <string name="level">Level</string>
+    <string name="record">Record</string>
+
+    <string name="basic">Basic</string>
+    <string name="advanced">Advanced</string>
 </resources>
