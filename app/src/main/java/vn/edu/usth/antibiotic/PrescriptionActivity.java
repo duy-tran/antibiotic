@@ -1,5 +1,6 @@
 package vn.edu.usth.antibiotic;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -45,10 +46,13 @@ public class PrescriptionActivity extends AppCompatActivity {
             }
         });
     
-        Button checkPrescriptionButton = (Button) findViewById(R.id.checkPrescriptionButton);
-        checkPrescriptionButton.setOnClickListener(new View.OnClickListener() {
+        Button checkAntibioticButton = (Button) findViewById(R.id.checkAntibioticButton);
+        checkAntibioticButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Class cl = CheckAntibioticActivity.class;
+                Intent myIntent = new Intent(getApplicationContext(), cl);
+                getApplicationContext().startActivity(myIntent);
             }
         });
     }
