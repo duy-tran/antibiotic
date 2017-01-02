@@ -28,6 +28,7 @@
             <Button
                 android:layout_height="wrap_content"
                 android:layout_width="@dimen/button_width"
-                android:text="@string/antibiotic_check" />
+                android:text="@string/antibiotic_check"
+                android:onClick="antibioticCheck"/>
         </LinearLayout>
 </LinearLayout>

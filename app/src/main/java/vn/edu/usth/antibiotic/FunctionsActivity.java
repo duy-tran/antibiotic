@@ -1,9 +1,11 @@
 package vn.edu.usth.antibiotic;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
 
 /**
  * Created by duy on 1/2/17.
@@ -20,5 +22,10 @@ public class FunctionsActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         ActionBar ab = getSupportActionBar();
         ab.setDisplayHomeAsUpEnabled(true);
+    }
+
+    public void antibioticCheck(View v){
+        Intent myIntent = new Intent(getApplicationContext(), AddPrescriptionActivity.class);
+        getApplicationContext().startActivity(myIntent);
     }
 }

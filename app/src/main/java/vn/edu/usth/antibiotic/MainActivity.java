@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.cross).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openMenu("add");
+                openMenu("functions");
             }
         });
 
@@ -53,8 +53,8 @@ public class MainActivity extends AppCompatActivity {
             case "search":
                 cl = DrugSearchActivity.class;
                 break;
-            case "add":
-                cl = AddPrescriptionActivity.class;
+            case "functions":
+                cl = FunctionsActivity.class;
                 break;
             case "user":
                 cl = PersonalRecordActivity.class;
