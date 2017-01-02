@@ -6,6 +6,7 @@
     <string name="parametric">Test parametric</string>
     <string name="diagnostic">Doctor\'s diagnostic</string>
     <string name="antibiotic_check">Antibiotic check</string>
+    <string name="notification">Notification</string>
 
     <string name="add">Add</string>
     <string name="check">Check</string>

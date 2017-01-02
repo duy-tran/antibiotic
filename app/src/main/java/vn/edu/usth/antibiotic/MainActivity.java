@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 
 /**
  * Created by duy on 1/2/17.
@@ -38,11 +37,18 @@ public class MainActivity extends AppCompatActivity {
                 openMenu("functions");
             }
         });
-
+    
         findViewById(R.id.user).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openMenu("user");
+            }
+        });
+        
+        findViewById(R.id.alarm).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openMenu("alarm");
             }
         });
     }
@@ -58,6 +64,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case "user":
                 cl = PersonalRecordActivity.class;
+                break;
+            case "alarm":
+                cl = NotificationActivity.class;
                 break;
         }
         Intent myIntent = new Intent(getApplicationContext(),cl);
