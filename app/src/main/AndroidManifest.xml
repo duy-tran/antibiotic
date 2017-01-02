@@ -46,7 +46,7 @@
                 android:value="vn.edu.usth.antibiotic.MainActivity" />
         </activity>
 
-        <activity android:name=".AddPrescriptionActivity"
+        <activity android:name=".PrescriptionActivity"
                   android:theme="@style/Theme.AppCompat.Light.NoActionBar"
                   android:parentActivityName="vn.edu.usth.antibiotic.FunctionsActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->
