@@ -2,7 +2,9 @@ package vn.edu.usth.antibiotic;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,8 +24,11 @@ public class AddPrescriptionActivity extends AppCompatActivity {
     
         final ArrayList<String> medicineNames = new ArrayList<>();
         final MedicineAdapter medicineListAdapter = new MedicineAdapter(medicineNames);
+        
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
                 
         RecyclerView medicineList = (RecyclerView) findViewById(R.id.medicine_list);
+        medicineList.setLayoutManager(layoutManager);
         medicineList.setAdapter(medicineListAdapter);
     
         final EditText newMedicineTextbox = (EditText) findViewById(R.id.new_medicine_textbox);
@@ -32,9 +37,10 @@ public class AddPrescriptionActivity extends AppCompatActivity {
         addMedicineButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Log.i("prescription", "New medicine: " + newMedicineTextbox.getText());
                 String newMedicine = newMedicineTextbox.getText().toString();
-                newMedicineTextbox.setText("");
                 medicineNames.add(newMedicine);
+                newMedicineTextbox.setText("");
                 medicineListAdapter.notifyDataSetChanged();
             }
         });
@@ -66,6 +72,7 @@ public class AddPrescriptionActivity extends AppCompatActivity {
         public void onBindViewHolder(ViewHolder holder, int position) {
             TextView medicineName = (TextView) holder.medicineView.findViewById(R.id.medicine_name);
             medicineName.setText(data.get(position));
+            Log.i("prescription", "Medicine #" + position + ": " + data.get(position));
         }
     
         @Override
