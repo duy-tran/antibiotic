@@ -15,12 +15,12 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class AddPrescriptionActivity extends AppCompatActivity {
+public class PrescriptionActivity extends AppCompatActivity {
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_prescription);
+        setContentView(R.layout.activity_prescription);
     
         final ArrayList<String> medicineNames = new ArrayList<>();
         final MedicineAdapter medicineListAdapter = new MedicineAdapter(medicineNames);
@@ -42,6 +42,13 @@ public class AddPrescriptionActivity extends AppCompatActivity {
                 medicineNames.add(newMedicine);
                 newMedicineTextbox.setText("");
                 medicineListAdapter.notifyDataSetChanged();
+            }
+        });
+    
+        Button checkPrescriptionButton = (Button) findViewById(R.id.checkPrescriptionButton);
+        checkPrescriptionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
             }
         });
     }

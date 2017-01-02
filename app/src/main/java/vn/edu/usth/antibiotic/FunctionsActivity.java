@@ -25,7 +25,7 @@ public class FunctionsActivity extends AppCompatActivity {
     }
 
     public void antibioticCheck(View v){
-        Intent myIntent = new Intent(getApplicationContext(), AddPrescriptionActivity.class);
+        Intent myIntent = new Intent(getApplicationContext(), PrescriptionActivity.class);
         getApplicationContext().startActivity(myIntent);
     }
 }
