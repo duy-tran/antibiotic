@@ -24,7 +24,8 @@
                 android:layout_height="wrap_content"
                 android:layout_width="@dimen/button_width"
                 android:text="@string/diagnostic"
-                android:layout_marginBottom="@dimen/button_margin"/>
+                android:layout_marginBottom="@dimen/button_margin"
+                android:onClick="diagnostic"/>
             <Button
                 android:layout_height="wrap_content"
                 android:layout_width="@dimen/button_width"
