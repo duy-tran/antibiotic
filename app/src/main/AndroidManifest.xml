@@ -19,6 +19,15 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".FunctionsActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:parentActivityName="vn.edu.usth.antibiotic.MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vn.edu.usth.antibiotic.MainActivity" />
+        </activity>
+
         <activity android:name=".DrugSearchActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:parentActivityName="vn.edu.usth.antibiotic.MainActivity">
@@ -39,16 +48,16 @@
 
         <activity android:name=".AddPrescriptionActivity"
                   android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-                  android:parentActivityName="vn.edu.usth.antibiotic.MainActivity">
+                  android:parentActivityName="vn.edu.usth.antibiotic.FunctionsActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                     android:name="android.support.PARENT_ACTIVITY"
                     android:value="vn.edu.usth.antibiotic.MainActivity" />
         </activity>
 
-        <activity android:name=".FunctionsActivity"
+        <activity android:name=".DiagnosticActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:parentActivityName="vn.edu.usth.antibiotic.MainActivity">
+            android:parentActivityName="vn.edu.usth.antibiotic.FunctionsActivity">
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

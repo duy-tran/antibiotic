@@ -28,4 +28,9 @@ public class FunctionsActivity extends AppCompatActivity {
         Intent myIntent = new Intent(getApplicationContext(), AddPrescriptionActivity.class);
         getApplicationContext().startActivity(myIntent);
     }
+
+    public void diagnostic(View v){
+        Intent myIntent = new Intent(getApplicationContext(), DiagnosticActivity.class);
+        getApplicationContext().startActivity(myIntent);
+    }
 }
