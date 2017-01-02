@@ -5,4 +5,8 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="black">#000</color>
+    <color name="white">#FFF</color>
+
+    <color name="checkPass">#0F0</color>
+    <color name="checkFail">#F00</color>
 </resources>
