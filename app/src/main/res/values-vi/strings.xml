@@ -2,4 +2,7 @@
 <resources>
     <string name="drugsearch">Tra cứu thuốc</string>
     <string name="drugsearch_entername">Nhập tên thuốc</string>
+    <string name="antibiotic_check">Kiểm tra đơn thuốc</string>
+    <string name="diagnostic">Chuẩn đoán bác sĩ</string>
+    <string name="parametric">Thông số xét nghiệm</string>
 </resources>

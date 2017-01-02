@@ -31,12 +31,20 @@ public class MainActivity extends AppCompatActivity {
                 openMenu("search");
             }
         });
+        findViewById(R.id.cross).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openMenu("functions");
+            }
+        });
     }
 
     private void openMenu(String name){
         Class cl = null;
         if (name.equals("search")) {
             cl = DrugSearchActivity.class;
+        } else if (name.equals("functions")) {
+            cl = FunctionsActivity.class;
         }
         Intent myIntent = new Intent(getApplicationContext(),cl);
         getApplicationContext().startActivity(myIntent);

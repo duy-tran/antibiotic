@@ -3,4 +3,7 @@
 
     <string name="drugsearch">Drug search</string>
     <string name="drugsearch_entername">Enter name</string>
+    <string name="parametric">Test parametric</string>
+    <string name="diagnostic">Doctor\'s diagnostic</string>
+    <string name="antibiotic_check">Antibiotic check</string>
 </resources>
