@@ -13,4 +13,14 @@
     <string name="record">Hồ sơ bệnh án</string>
     <string name="advanced">Nâng cao</string>
     <string name="basic">Cơ bản</string>
+    <string name="blood_type">Nhóm máu</string>
+    <string name="country">Quốc gia</string>
+    <string name="dob">Ngày tháng năm sinh</string>
+    <string name="full_name">Họ và tên</string>
+    <string name="gender">Giới tính</string>
+    <string name="notification">Nhắc giờ</string>
+    <string name="forgot_password">Quên mật khẩu</string>
+    <string name="login">Đăng nhập</string>
+    <string name="password">Mật khẩu</string>
+    <string name="signup">Đăng ký</string>
 </resources>
