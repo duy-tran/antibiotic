@@ -4,6 +4,7 @@
     <string name="drugsearch_entername">Nhập tên thuốc</string>
     <string name="antibiotic_check">Kiểm tra đơn thuốc</string>
     <string name="diagnostic">Chuẩn đoán bác sĩ</string>
+    <string name="diagnostic_history">Lịch sử khám bệnh</string>
     <string name="parametric">Thông số xét nghiệm</string>
     <string name="add">Thêm</string>
     <string name="level">Cấp độ</string>
