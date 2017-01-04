@@ -24,7 +24,7 @@
         <activity
                 android:name=".FunctionsActivity"
                 android:parentActivityName=".MainActivity"
-                android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+                android:theme="@style/AppTheme.Light">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
@@ -34,7 +34,7 @@
         <activity
                 android:name=".DrugSearchActivity"
                 android:parentActivityName=".MainActivity"
-                android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+                android:theme="@style/AppTheme.Light">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
@@ -44,7 +44,7 @@
         <activity
                 android:name=".PersonalRecordActivity"
                 android:parentActivityName=".MainActivity"
-                android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+                android:theme="@style/AppTheme.Light">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
@@ -54,7 +54,7 @@
         <activity
                 android:name=".PrescriptionActivity"
                 android:parentActivityName=".FunctionsActivity"
-                android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+                android:theme="@style/AppTheme.Light">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
@@ -64,7 +64,7 @@
         <activity
                 android:name=".CheckAntibioticActivity"
                 android:parentActivityName=".MainActivity"
-                android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+                android:theme="@style/AppTheme.Light">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
@@ -74,7 +74,7 @@
         <activity
                 android:name=".DiagnosticActivity"
                 android:parentActivityName=".FunctionsActivity"
-                android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+                android:theme="@style/AppTheme.Light">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
@@ -84,7 +84,7 @@
         <activity
                 android:name=".NotificationActivity"
                 android:parentActivityName=".FunctionsActivity"
-                android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+                android:theme="@style/AppTheme.Light">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data

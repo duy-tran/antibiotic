@@ -25,9 +25,16 @@
     <string name="gender">Gender</string>
     <string name="dob">Date of birth</string>
     <string name="full_name">Full name</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
     <string name="forgot_password">Forgot your password?</string>
     <string name="signup">Sign up</string>
     <string name="password">Password</string>
     <string name="email" translatable="false">Email</string>
     <string name="login">Login</string>
+    <string name="liver_func">Liver Function</string>
+    <string name="kidney_func">Kidney Function</string>
+    <string name="ksd">KSD</string>
+    <string name="blood_pressure">Blood Pressure</string>
+    <string name="allergy">Allergy</string>
 </resources>
