@@ -23,7 +23,12 @@ public class FunctionsActivity extends AppCompatActivity {
         ActionBar ab = getSupportActionBar();
         ab.setDisplayHomeAsUpEnabled(true);
     }
-
+    
+    public void parametricTest(View v){
+        Intent myIntent = new Intent(getApplicationContext(), ParametricTest.class);
+        getApplicationContext().startActivity(myIntent);
+    }
+    
     public void antibioticCheck(View v){
         Intent myIntent = new Intent(getApplicationContext(), PrescriptionActivity.class);
         getApplicationContext().startActivity(myIntent);

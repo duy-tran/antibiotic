@@ -91,6 +91,16 @@
                     android:name="android.support.PARENT_ACTIVITY"
                     android:value="vn.edu.usth.antibiotic.MainActivity"/>
         </activity>
+        <activity
+                android:name=".ParametricTest"
+                android:parentActivityName=".FunctionsActivity"
+                android:theme="@style/AppTheme.Light">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="vn.edu.usth.antibiotic.MainActivity"/>
+        </activity>
     </application>
 
 </manifest>
