@@ -56,7 +56,7 @@ public class CheckAntibioticActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(CheckAntibioticActivity.this, DrugInfomationActivity.class);
-                intent.putExtra("drug","Ciprofolxacin");
+                intent.putExtra("drug","Ciprofloxacin");
                 startActivity(intent);
             }
         });

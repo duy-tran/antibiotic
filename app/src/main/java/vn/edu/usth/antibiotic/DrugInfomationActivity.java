@@ -31,11 +31,11 @@ public class DrugInfomationActivity extends AppCompatActivity {
             case "Penicillin":
                 return R.string.penicillin;
             case "Tetracycline":
-                return 1;
+                return R.string.tetracycline;
             case "Gentamicin":
-                return 1;
-            case "Ciprofolxacin":
-                return 1;
+                return R.string.gentamicin;
+            case "Ciprofloxacin":
+                return R.string.ciprofloxacin;
         }
         return 0;
     }
