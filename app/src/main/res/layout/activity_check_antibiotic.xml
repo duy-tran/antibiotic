@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".CheckAntibioticActivity">
-
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="vn.edu.usth.antibiotic.DiagnosticHistoryActivity">
+<android.support.v7.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    android:theme="@style/ToolBarStyle"
+    android:minHeight="?attr/actionBarSize"
+    android:id="@+id/toolbar_check_antibiotic" />
     <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -19,16 +25,18 @@
                     xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:background="@color/checkPass">
+                    android:background="@color/accent_material_light">
 
-                <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:paddingLeft="10dp"
-                        android:textSize="20sp"
-                        android:text="Penicillin"/>
-
+                <Button
+                    android:id="@+id/drug1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:textSize="20sp"
+                    android:text="Penicillin"
+                    style="?android:attr/borderlessButtonStyle"/>
                 <View
                         android:layout_width="match_parent"
                         android:layout_height="0.5dp"
@@ -39,16 +47,18 @@
                     xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:background="@color/checkPass">
+                    android:background="@color/accent_material_light">
 
-                <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:paddingLeft="10dp"
-                        android:textSize="20sp"
-                        android:text="Tetracycline"/>
-
+                <Button
+                    android:id="@+id/drug2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:textSize="20sp"
+                    android:text="Tetracycline"
+                    style="?android:attr/borderlessButtonStyle"/>
                 <View
                         android:layout_width="match_parent"
                         android:layout_height="0.5dp"
@@ -59,17 +69,19 @@
                     xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:background="@color/checkFail">
+                    android:background="@color/primary_dark">
 
-                <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:paddingLeft="10dp"
-                        android:textSize="20sp"
-                        android:text="Gentamicin"
-                        android:textColor="@color/white"/>
-
+                <Button
+                    android:id="@+id/drug3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:textSize="20sp"
+                    android:text="Gentamicin"
+                    android:textColor="@color/white"
+                    style="?android:attr/borderlessButtonStyle"/>
                 <View
                         android:layout_width="match_parent"
                         android:layout_height="0.5dp"
@@ -80,16 +92,18 @@
                     xmlns:android="http://schemas.android.com/apk/res/android"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:background="@color/checkPass">
+                    android:background="@color/accent_material_light">
 
-                <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:paddingLeft="10dp"
-                        android:textSize="20sp"
-                        android:text="Ciprofolxacin"/>
-
+                <Button
+                    android:id="@+id/drug4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:textSize="20sp"
+                    android:text="Ciprofolxacin"
+                    style="?android:attr/borderlessButtonStyle"/>
                 <View
                         android:layout_width="match_parent"
                         android:layout_height="0.5dp"
@@ -100,4 +114,4 @@
 
     </ScrollView>
 
-</RelativeLayout>
+</LinearLayout>

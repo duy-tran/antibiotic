@@ -6,6 +6,7 @@
     <string name="diagnostic">Chuẩn đoán bác sĩ</string>
     <string name="diagnostic_history">Lịch sử khám bệnh</string>
     <string name="parametric">Thông số xét nghiệm</string>
+    <string name="drug_information">Thông tin thuốc</string>
     <string name="add">Thêm</string>
     <string name="level">Cấp độ</string>
     <string name="type">Loại</string>

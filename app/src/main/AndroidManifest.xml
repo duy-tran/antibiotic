@@ -19,7 +19,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".FunctionsActivity"
             android:parentActivityName=".MainActivity"
@@ -91,17 +91,19 @@
                 android:value="vn.edu.usth.antibiotic.MainActivity" />
         </activity>
         <activity
-<<<<<<< HEAD
             android:name=".DiagnosticHistoryActivity"
             android:parentActivityName=".FunctionsActivity"
             android:theme="@style/AppTheme.Light">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
-                    android:name="android.support.PARENT_ACTIVITY"
-                    android:value="vn.edu.usth.antibiotic.MainActivity"/>
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="vn.edu.usth.antibiotic.MainActivity" />
         </activity>
->>>>>>> 65e7764f129d4f287d8a51fc0584b618c839c39e
+        >>>>>>> 65e7764f129d4f287d8a51fc0584b618c839c39e
+        <activity
+            android:name=".DrugInfomationActivity"
+            android:theme="@style/AppTheme.Light"></activity>
     </application>
 
 </manifest>
