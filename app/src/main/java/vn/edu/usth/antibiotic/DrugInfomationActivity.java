@@ -29,13 +29,13 @@ public class DrugInfomationActivity extends AppCompatActivity {
     protected Integer get_drug_information(String drug_name){
         switch (drug_name){
             case "Penicillin":
-//                return R.string.penicillin;
+                return R.string.penicillin;
             case "Tetracycline":
-//                return R.string.tetracycline;
+                return R.string.tetracycline;
             case "Gentamicin":
                 return R.string.gentamicin;
             case "Ciprofloxacin":
-//                return R.string.ciprofloxacin;
+                return R.string.ciprofloxacin;
         }
         return 0;
     }
